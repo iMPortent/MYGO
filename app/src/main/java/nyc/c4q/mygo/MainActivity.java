@@ -9,7 +9,7 @@ import android.widget.*;
 public class MainActivity extends AppCompatActivity {
 
     TextView numberField;
-    View view;
+    //View view;
 
 
     @Override
@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
         numberField =(TextView) findViewById(R.id.show_number);
     }
 
-    public void useText() {
-        GeneralLogic.grabText(View view, numberField);
+    public void useText(View view) {
+        GeneralLogic.grabText(view, numberField);
     }
 
 }
