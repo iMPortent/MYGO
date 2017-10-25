@@ -15,7 +15,7 @@ public class GeneralLogic {
     }
 
     public static void grabText(View view, TextView textView){
-        textView.setText(grabString(view);
+        textView.setText(grabString(view));
     }
 
     public static int grabInt(View view){
@@ -23,3 +23,12 @@ public class GeneralLogic {
     }
 
 }
+
+
+
+
+
+
+
+
+
