@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void useText(View view) {
-        numStrip.add(GeneralLogic.grabText(view, numberField));
+        GeneralLogic.appendNumber(view, numberField);
+        numStrip.add(GeneralLogic.grabString(view));
     }
 
 }
