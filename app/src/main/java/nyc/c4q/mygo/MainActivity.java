@@ -9,6 +9,7 @@ import android.widget.*;
 public class MainActivity extends AppCompatActivity {
 
     TextView numberField;
+    View view;
 
 
     @Override
@@ -16,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         numberField =(TextView) findViewById(R.id.show_number);
+    }
+
+    public void useText() {
+        GeneralLogic.grabText(View view, numberField);
     }
 
 }
