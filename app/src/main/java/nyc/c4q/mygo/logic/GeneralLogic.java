@@ -9,7 +9,17 @@ import android.widget.*;
 
 public class GeneralLogic {
 
-    public static void grabText(View view, TextView textView){
-        textView.setText(((Button) view).getText().toString());
+
+    public static String grabString(View view){
+        return ((Button) view).getText().toString();
     }
+
+    public static void grabText(View view, TextView textView){
+        textView.setText(grabString(view);
+    }
+
+    public static int grabInt(View view){
+        return Integer.parseInt(grabString(view));
+    }
+
 }
