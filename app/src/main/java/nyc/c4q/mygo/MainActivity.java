@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView numberField;
     ArrayList<String>numStrip;
+    String number;
     //View view;
 
 
@@ -20,13 +21,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         numberField =(TextView) findViewById(R.id.show_number);
         numStrip = new ArrayList<>();
+        number ="";
     }
 
     public void useText(View view) {
         GeneralLogic.appendNumber(view, numberField);
-        numStrip.add(GeneralLogic.grabString(view));
+        number += GeneralLogic.grabString(view);
     }
 
+    public void operate(View view){
+        GeneralLogic.clearField(view,numberField);
+        numStrip.add(number);
+        number ="";
 
+
+    }
 
 }
