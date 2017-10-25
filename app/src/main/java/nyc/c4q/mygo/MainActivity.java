@@ -18,7 +18,4 @@ public class MainActivity extends AppCompatActivity {
         numberField =(TextView) findViewById(R.id.show_number);
     }
 
-    public void grabText(View view){
-        numberField.setText(((Button) view).getText().toString());
-    }
 }
