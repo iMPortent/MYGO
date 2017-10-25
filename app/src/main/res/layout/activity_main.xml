@@ -6,15 +6,17 @@
     android:layout_height="match_parent"
     android:background="#000000"
     android:orientation="vertical"
-    tools:context="nyc.c4q.mygo.myGo">
+    >
+
     <TextView
+        android:id="@+id/show_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Scientific Calculator"
         android:textColor="#FFE0C0"
         android:textSize="20sp"
-        />
+        />        <!--android:text="Scientific Calculator"-->
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,7 +25,8 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="rad" />
+            android:text="rad"
+            />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,12 +35,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="x!" />
-        />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="(" />
-        />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="AC" />
-        />
+
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -74,19 +77,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="9"
-            />
-        />
+            android:onClick="appendNumber"/>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="8"
-            />
+            android:onClick="appendNumber"/>
+
         />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="7"
-            />
+            android:onClick="useText"/>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -115,19 +120,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="4"
-            />
-        />
+            android:onClick="useText"/>
+
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="5"
-            />
-        />
+            android:onClick="useText"/>
+
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="6"
-            />
+            android:onClick="useText"/>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -155,19 +163,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="1"
-            />
+            android:onClick="useText"/>
+
         />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="2"
-            />
+            android:onClick="useText"/>
+
         />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="3"
-            />
+            android:onClick="useText"/>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -195,11 +206,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="0"
+            android:onClick="useText"
             />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="."
+            android:onClick="useText"
             />
         />
         <Button
