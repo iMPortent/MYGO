@@ -73,29 +73,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="sin"
-            />
-
-
+            android:onClick=""/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="ln"
-            android:onClick="operateNext"
-            />
-
+            android:onClick="operateNext"/>
+        />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="9"
-            />
+            android:onClick="useText"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="8"
-            android:onClick="useText"
-            />
+            android:onClick="useText"/>
 
+        />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -108,7 +105,6 @@
             android:text="/"
             android:onClick="operateOn"
             />
-
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -127,41 +123,34 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="log"
-            android:onClick="operateNext"
-            />
-
+            android:onClick="operateNext"/>
+        />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="4"
-            android:onClick="useText"
-            />
+            android:onClick="useText"/>
 
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="5"
-            android:onClick="useText"
-            />
+            android:onClick="useText"/>
 
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="6"
-            android:onClick="useText"
-            />
+            android:onClick="useText"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="X"
-            android:onClick="operateOn"
-            />
-
+            android:onClick="operateOn"/>
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -171,29 +160,29 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="e" />
-
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="tan" />
-
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Button3" />
-
+        />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="1"
             android:onClick="useText"/>
 
+        />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="2"
             android:onClick="useText"/>
 
+        />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -205,7 +194,6 @@
             android:layout_height="wrap_content"
             android:text="-"
             android:onClick="operateOn"/>
-
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -224,7 +212,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="x^" />
-
+        />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -237,7 +225,7 @@
             android:text="."
             android:onClick="useText"
             />
-
+        />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -247,7 +235,6 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="+"
-            android:onClick="operate"/>
+            android:text="+" />
     </LinearLayout>
 </LinearLayout>
