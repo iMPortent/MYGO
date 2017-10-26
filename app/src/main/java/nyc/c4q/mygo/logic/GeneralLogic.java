@@ -8,20 +8,24 @@ import android.widget.*;
  */
 
 public class GeneralLogic {
+
     public static void clearField(View view, TextView textView){
         textView.setText("");
+    }
+    public static String append_(View view, TextView textView){
+        return textView.getText().toString() + grabString(view);
     }
 
     public static String grabString(View view){
         return ((Button) view).getText().toString();
     }
 
-    public static void swapNumber(View view, TextView textView){
-        textView.setText(grabString(view));
+    public static void appendWithP(View view, TextView textView){
+        textView.setText(append_(view, textView).concat("( )"));
     }
 
     public static void appendNumber(View view, TextView textView){
-        textView.setText(textView.getText().toString() + grabString(view));
+        textView.setText(append_(view, textView));
 
     }
 
