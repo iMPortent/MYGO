@@ -32,12 +32,12 @@ public class MainActivity extends AppCompatActivity {
     public void operateOn(View view){
         GeneralLogic.clearField(view,numberField);
         numStrip.add(number);
+        numStrip.add(GeneralLogic.grabString(view));
         number ="";
     }
 
     public void operateNext(View view){
         GeneralLogic.appendWithP(view,numberField);
-
     }
 
 }
