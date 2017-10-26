@@ -2,6 +2,8 @@ package nyc.c4q.mygo.logic;
 
 import android.view.*;
 import android.widget.*;
+import java.util.*;
+
 
 /**
  * Created by MarckemX on 10/24/17.
@@ -29,11 +31,16 @@ public class GeneralLogic {
 
     }
 
-    public static int grabInt(View view){
-        return Integer.parseInt(grabString(view));
-    }
+//    public static int grabInt(View view){
+//        return Integer.parseInt(grabString(view));
+//    }
 
-
+//    public static void performEquation(ArrayList<String>expression){
+//        for(int i = 0; i < expression.size();i++){
+//            String x = expression.get(i);
+//            //x.length()-1;
+//        }
+//    }
 }
 
 
