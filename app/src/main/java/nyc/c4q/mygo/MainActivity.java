@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void operateNext(View view){
-        GeneralLogic.appendNumber(view,numberField);
+        GeneralLogic.appendWithP(view,numberField);
 
     }
 
