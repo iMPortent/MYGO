@@ -12,7 +12,7 @@ public class GeneralLogic {
     public static void clearField(View view, TextView textView){
         textView.setText("");
     }
-    public static String append_(View view, TextView textView){
+    private static String append_(View view, TextView textView){
         return textView.getText().toString() + grabString(view);
     }
 
