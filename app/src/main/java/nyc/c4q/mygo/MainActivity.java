@@ -9,30 +9,23 @@ import java.util.*;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView numberField;
-    ArrayList<String>numStrip;
-    String number;
-    //View view;
-
+    ButtonLogic myButtons;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        numberField =(TextView) findViewById(R.id.show_number);
-        numStrip = new ArrayList<>();
-        number ="";
+        //numberField =(TextView) findViewById(R.id.show_number);
+//        numStrip = new ArrayList<>();
+//        number ="";
+        setValues();
+
     }
 
-    public void useText(View view) {
-        GeneralLogic.appendNumber(view, numberField);
-        number += GeneralLogic.grabString(view);
+    public void setValues(){
+        myButtons = new ButtonLogic();
+        myButtons.setNumField((TextView) findViewById(R.id.show_number));
     }
 
-    b
-
-    public void operateNext(View view){
-        GeneralLogic.appendWithP(view,numberField);
-    }
 
 }
