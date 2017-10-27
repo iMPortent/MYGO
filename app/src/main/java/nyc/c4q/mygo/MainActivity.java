@@ -29,12 +29,7 @@ public class MainActivity extends AppCompatActivity {
         number += GeneralLogic.grabString(view);
     }
 
-    public void operateOn(View view){
-        GeneralLogic.clearField(view,numberField);
-        numStrip.add(number);
-        numStrip.add(GeneralLogic.grabString(view));
-        number ="";
-    }
+    b
 
     public void operateNext(View view){
         GeneralLogic.appendWithP(view,numberField);
