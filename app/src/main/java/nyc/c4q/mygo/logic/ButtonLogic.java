@@ -10,28 +10,27 @@ import java.util.*;
  */
 
 public class ButtonLogic {
-    private static TextView numberField;
-    private static String number="";
-    private static ArrayList<String>equation;
 
-    public static void setNumField(TextView numberField){
-        this.numberField = numberField;
+
+    public static void operateNext(View view, TextView textView){
+        appendWithP(view,textView);
     }
 
-    public static void appendNumber(View view) {
-        GeneralLogic.appendNumber(view, numberField);
-        number += GeneralLogic.grabString(view);
-    }
-
-    public static void operateNext(View view){
-        GeneralLogic.appendWithP(view,numberField);
-    }
-
-    public static void operate(View view){
-        GeneralLogic.clearField(view,numberField);
+    public static void operate(View view,TextView numberField,String number, ArrayList<String> equation){
+        GeneralLogic.clearField(numberField);
         equation.add(number);
         equation.add(GeneralLogic.grabString(view));
-        number ="";
+    }
+
+    public static void appendWithP(View view, TextView textView){
+        textView.setText(GeneralLogic.append_(view, textView).concat("( )"));
+    }
+
+    public static void appendNumber(View view, TextView textView, String number){
+        textView.setText(GeneralLogic.append_(view, textView));
+        number += GeneralLogic.grabString(view);
+
+
     }
 
 }

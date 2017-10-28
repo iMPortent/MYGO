@@ -11,36 +11,20 @@ import java.util.*;
 
 public class GeneralLogic {
 
-    public static void clearField(View view, TextView textView){
+    public static void clearField(TextView textView){
         textView.setText("");
     }
-    private static String append_(View view, TextView textView){
+    public static String append_(View view, TextView textView){
         return textView.getText().toString() + grabString(view);
     }
-
     public static String grabString(View view){
         return ((Button) view).getText().toString();
     }
-
-    public static void appendWithP(View view, TextView textView){
-        textView.setText(append_(view, textView).concat("( )"));
+    public static int grabInt(View view){
+        return Integer.parseInt(grabString(view));
     }
 
-    public static void appendNumber(View view, TextView textView){
-        textView.setText(append_(view, textView));
 
-    }
-
-//    public static int grabInt(View view){
-//        return Integer.parseInt(grabString(view));
-//    }
-
-//    public static void performEquation(ArrayList<String>expression){
-//        for(int i = 0; i < expression.size();i++){
-//            String x = expression.get(i);
-//            //x.length()-1;
-//        }
-//    }
 }
 
 
