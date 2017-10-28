@@ -84,7 +84,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="9"
-            android:onClick="useText"/>
+            android:onClick="myButtons.appendNumber"/>
 
         <Button
             android:layout_width="match_parent"
