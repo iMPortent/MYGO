@@ -18,14 +18,14 @@ public class MainActivity extends AppCompatActivity {
         //numberField =(TextView) findViewById(R.id.show_number);
 //        numStrip = new ArrayList<>();
 //        number ="";
-        setValues();
+        //setValues();
 
     }
 
-    public void setValues(){
-        myButtons = new ButtonLogic();
-        myButtons.setNumField((TextView) findViewById(R.id.show_number));
-    }
+//    public void setValues(){
+//        myButtons = new ButtonLogic();
+//        myButtons.setNumField((TextView) findViewById(R.id.show_number));
+//    }
 
 
 }
