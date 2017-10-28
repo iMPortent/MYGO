@@ -20,9 +20,9 @@ public class GeneralLogic {
     public static String grabString(View view){
         return ((Button) view).getText().toString();
     }
-    public static int grabInt(View view){
-        return Integer.parseInt(grabString(view));
-    }
+//    public static int grabInt(View view){
+//        return Integer.parseInt(grabString(view));
+//    }
 
 
 }

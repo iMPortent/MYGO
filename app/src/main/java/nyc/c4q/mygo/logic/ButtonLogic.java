@@ -13,15 +13,15 @@ public class ButtonLogic {
 
 
     public static void operateNext(View view, TextView textView){
-        appendWithP(view,textView);
+        inlineOperation(view,textView);
     }
 
-    public static void operate(View view,TextView numberField,String number){
+    public static void inputNumber(View view,TextView numberField,String number){
         GeneralLogic.clearField(numberField);
         number += GeneralLogic.grabString(view);
     }
 
-    public static void appendWithP(View view, TextView textView){
+    public static void inlineOperation(View view, TextView textView){
         textView.setText(GeneralLogic.append_(view, textView).concat("( )"));
     }
 
