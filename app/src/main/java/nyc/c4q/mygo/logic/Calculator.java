@@ -13,23 +13,15 @@ public class Calculator {
     private static Stack<String> operators = new Stack<>();
     private static String currNumber="";
 
-    public static void setNumberField(TextView textView){
-        numberField = textView;
-    }
-    public static void buildNumber(View view){
-        ButtonLogic.appendNumber(view, numberField, currNumber);
+    public static void setNumberField(TextView textView){numberField = textView;}
+
+    public static void addDigit(View view){
+        ButtonLogic.append_(view,numberField);
     }
 
-    public static void completeNumber(){
-        numbers.add(Integer.parseInt(currNumber));
-        currNumber ="";
-    }
 
-    public static void addOperator(View view){
-        completeNumber();
-        operators.add(GeneralLogic.grabString(view));
-        GeneralLogic.clearField(numberField);
-    }
+
+
 
 
 
