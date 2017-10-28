@@ -5,5 +5,15 @@ package nyc.c4q.mygo.logic;
  */
 
 public class MathLogic {
+    public int add(int a, int b){
+        return a + b;
+    }
 
+    public int subtract(int a, int b){
+        return a - b;
+    }
+
+    public int multiply(int a, int b){
+        return a*b;
+    }
 }
