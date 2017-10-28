@@ -16,10 +16,9 @@ public class ButtonLogic {
         appendWithP(view,textView);
     }
 
-    public static void operate(View view,TextView numberField,String number, ArrayList<String> equation){
+    public static void operate(View view,TextView numberField,String number){
         GeneralLogic.clearField(numberField);
-        equation.add(number);
-        equation.add(GeneralLogic.grabString(view));
+        number += GeneralLogic.grabString(view);
     }
 
     public static void appendWithP(View view, TextView textView){
