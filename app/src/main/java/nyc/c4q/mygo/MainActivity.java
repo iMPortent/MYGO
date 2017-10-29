@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
         //setValues();
 
     }
-
 //    public void setValues(){
 //        myButtons = new ButtonLogic();
 //        myButtons.setNumField((TextView) findViewById(R.id.show_number));
