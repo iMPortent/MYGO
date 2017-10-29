@@ -23,6 +23,7 @@
         android:orientation="horizontal"
         >
         <Button
+            android:id="@+id/radianButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="rad"
@@ -36,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="x!"
-            android:onClick="operateOn"/>
+            android:onClick="singleOp"/>
 
         <Button
             android:layout_width="match_parent"
@@ -54,9 +55,11 @@
             android:layout_height="wrap_content"
             android:text="%"
             android:onClick="operate"/>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="clearField"
             android:text="AC" />
 
     </LinearLayout>
@@ -73,37 +76,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="sin"
-            android:onClick=""/>
+            android:onClick="singleOp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="ln"
-            android:onClick="operateNext"/>
+            android:onClick="singleOp"/>
         />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="9"
-            android:onClick="myButtons.appendNumber"/>
+            android:onClick="append_"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="8"
-            android:onClick="useText"/>
+            android:onClick="append_"/>
 
         />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="7"
-            android:onClick="useText"/>
+            android:onClick="append_"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="/"
-            android:onClick="operateOn"
+            android:onClick="addOperator"
             />
     </LinearLayout>
     <LinearLayout
@@ -118,7 +121,8 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="con" />
+            android:text="con"
+            android:onClick="singleOp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -129,27 +133,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="4"
-            android:onClick="useText"/>
+            android:onClick="append_"/>
 
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="5"
-            android:onClick="useText"/>
+            android:onClick="append_"/>
 
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="6"
-            android:onClick="useText"/>
+            android:onClick="append_"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="X"
-            android:onClick="operateOn"/>
+            android:onClick="addOperator"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -163,37 +167,38 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="tan" />
+            android:text="tan"
+            android:onClick="singleOp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Button3" />
-        />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="1"
-            android:onClick="useText"/>
+            android:onClick="append_"/>
 
         />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="2"
-            android:onClick="useText"/>
+            android:onClick="append_"/>
 
         />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="3"
-            android:onClick="useText"/>
+            android:onClick="append_"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="-"
-            android:onClick="operateOn"/>
+            android:onClick="addOperator"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -212,30 +217,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="x^" />
-        />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="0"
-            android:onClick="useText"
+            android:onClick="append_"
             />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="."
-            android:onClick="useText"
+            android:onClick="append_"
             />
-        />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="="
-            android:onClick="operate"
+            android:onClick="evaluate"
             />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="+"
-            android:onClick="operate"/>
+            android:onClick="addOperator"/>
     </LinearLayout>
 </LinearLayout>
