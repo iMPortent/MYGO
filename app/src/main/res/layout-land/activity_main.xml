@@ -34,18 +34,21 @@
             android:layout_height="wrap_content"
             />
         <Button
+            android:id="@+id/factorialButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="x!"
             android:onClick="singleOp"/>
 
         <Button
+            android:id="@+id/openParenthesisButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="("
             android:onClick="useText"/>
 
         <Button
+            android:id="@+id/closeParenthesisButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=")"
@@ -55,6 +58,7 @@
             android:layout_height="wrap_content"
             android:text="%"
             android:onClick="operate"/>
+
 
         <Button
             android:layout_width="match_parent"
@@ -69,40 +73,47 @@
         android:orientation="horizontal"
         >
         <Button
+            android:id="@+id/invButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="inv" />
         <Button
+            android:id="@+id/sinButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="sin"
             android:onClick="singleOp"/>
         <Button
+            android:id="@+id/lnButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="ln"
             android:onClick="singleOp"/>
         />
         <Button
+            android:id="@+id/nineButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="9"
             android:onClick="append_"/>
 
         <Button
+            android:id="@+id/eightButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="8"
             android:onClick="append_"/>
 
-        />
+
         <Button
+            android:id="@+id/sevenButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="7"
             android:onClick="append_"/>
 
         <Button
+            android:id="@+id/forwardSlashButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="/"
@@ -115,21 +126,25 @@
         android:orientation="horizontal"
         >
         <Button
+            android:id="@+id/piButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="pi" />
         <Button
+            android:id="@+id/conButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="con"
             android:onClick="singleOp"/>
         <Button
+            android:id="@+id/logButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="log"
             android:onClick="operateNext"/>
-        />
+
         <Button
+            android:id="@+id/fourButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="4"
@@ -137,19 +152,23 @@
 
 
         <Button
+            android:id="@+id/fiveButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="5"
-            android:onClick="append_"/>
+            android:onClick="append_"
+            />
 
 
         <Button
+            android:id="@+id/sixButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="6"
             android:onClick="append_"/>
 
         <Button
+            android:id="@+id/multiplyButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="X"

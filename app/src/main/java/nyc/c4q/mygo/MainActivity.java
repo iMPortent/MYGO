@@ -58,39 +58,40 @@ public class MainActivity extends AppCompatActivity {
 //        myCalculator.setOperator(GeneralLogic.grabString(view));
 //    }
 //
-        Button radianButton = findViewById(R.id.radianButton);
-        Button buttonTwo = findViewById(R.id.buttonTwo);
-        Button xButton = findViewById(R.id.xButton);
-        Button openParenthesisButton = findViewById(R.id.openParenthesisButton);
-        Button closeParenthesisButton = findViewById(R.id.closeParenthesisButton);
-        Button percentageButton = findViewById(R.id.percentageButton);
-        Button acButton = findViewById(R.id.acButton);
-        Button invButton = findViewById(R.id.invButton);
-        Button sinButton = findViewById(R.id.sinButton);
-        Button lnButton = findViewById(R.id.lnButton);
-        Button nineButton = findViewById(R.id.nineButton);
-        Button eightButton = findViewById(R.id.eightButton);
-        Button sevenButton = findViewById(R.id.sevenButton);
-        Button forwardSlashButton = findViewById(R.id.forwardSlashButton);
-        Button piButton = findViewById(R.id.piButton);
-        Button conButton = findViewById(R.id.conButton);
-        Button logButton = findViewById(R.id.logButton);
-        Button fourButton = findViewById(R.id.fourButton);
-        Button fiveButton = findViewById(R.id.fiveButton);
-        Button sixButton = findViewById(R.id.sixButton);
-        Button eButton = findViewById(R.id.eButton);
-        Button tanButton = findViewById(R.id.tanButton);
-        Button buttonThree = findViewById(R.id.buttonThree);
-        Button oneButton = findViewById(R.id.oneButton);
-        Button twoButton = findViewById(R.id.twoButton);
-        Button threeButton = findViewById(R.id.threeButton);
-        Button spaceButton = findViewById(R.id.spaceButton);
-        Button ansButton = findViewById(R.id.ansButton);
-        Button expButton = findViewById(R.id.expButton);
-        Button powerButton = findViewById(R.id.powerButton);
-        Button periodButton = findViewById(R.id.periodButton);
-        Button equalsButton = findViewById(R.id.equalsButton);
-        Button addButton = findViewById(R.id.addButton);
+//        Button radianButton = findViewById(R.id.radianButton);
+//        Button buttonTwo = findViewById(R.id.buttonTwo);
+//        Button xButton = findViewById(R.id.factorialButton);
+//        Button openParenthesisButton = findViewById(R.id.openParenthesisButton);
+//        Button closeParenthesisButton = findViewById(R.id.closeParenthesisButton);
+//        Button percentageButton = findViewById(R.id.percentageButton);
+//        Button acButton = findViewById(R.id.acButton);
+//        Button invButton = findViewById(R.id.invButton);
+//        Button sinButton = findViewById(R.id.sinButton);
+//        Button lnButton = findViewById(R.id.lnButton);
+//        Button nineButton = findViewById(R.id.nineButton);
+//        Button eightButton = findViewById(R.id.eightButton);
+//        Button sevenButton = findViewById(R.id.sevenButton);
+//        Button forwardSlashButton = findViewById(R.id.forwardSlashButton);
+//        Button piButton = findViewById(R.id.piButton);
+//        Button conButton = findViewById(R.id.conButton);
+//        Button logButton = findViewById(R.id.logButton);
+//        Button fourButton = findViewById(R.id.fourButton);
+//        Button fiveButton = findViewById(R.id.fiveButton);
+//        Button sixButton = findViewById(R.id.sixButton);
+//        Button multiplyButton = findViewById(R.id.multiplyButton)
+//        Button eButton = findViewById(R.id.eButton);
+//        Button tanButton = findViewById(R.id.tanButton);
+//        Button buttonThree = findViewById(R.id.buttonThree);
+//        Button oneButton = findViewById(R.id.oneButton);
+//        Button twoButton = findViewById(R.id.twoButton);
+//        Button threeButton = findViewById(R.id.threeButton);
+//        Button spaceButton = findViewById(R.id.spaceButton);
+//        Button ansButton = findViewById(R.id.ansButton);
+//        Button expButton = findViewById(R.id.expButton);
+//        Button powerButton = findViewById(R.id.powerButton);
+//        Button periodButton = findViewById(R.id.periodButton);
+//        Button equalsButton = findViewById(R.id.equalsButton);
+//        Button addButton = findViewById(R.id.addButton);
 
 //
 //
@@ -151,21 +152,18 @@ public class MainActivity extends AppCompatActivity {
 //    }
 
     public void singleOp(View view){
-        MathLogic.singOperator(grabString(view),numone);
+        MathLogic.singOperator(grabString(view),convertToNum());
     }
-
     public void addOperator(View view){
         numone = convertToNum();
         clearField();
         operator = grabString(view);
     }
-
     public void evaluate(View view){
         numtwo = convertToNum();
         clearField();
         textView.setText(String.valueOf(MathLogic.pluralOperator(numone,numtwo,operator)));
     }
-
     public void clearField(View view){
         if(!textView.getText().toString().equals("")){textView.setText("");}
         else{numone = 0;numtwo = 0;}
@@ -177,6 +175,7 @@ public class MainActivity extends AppCompatActivity {
     public void append_(View view){
         textView.setText(textView.getText().toString() + grabString(view));
     }
+
     public String grabString(View view){
         return ((Button) view).getText().toString();
     }
